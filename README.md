@@ -1,10 +1,11 @@
 # Animating-Emojis-in-URLs
 You can use emoji (and other graphical unicode characters) in URLs. And wow is it great. But no one seems to do it. Why? Perhaps emoji are too exotic for normie web platforms to handle? Or maybe they are avoided for fear of angering the SEO gods?
 
-Whatever the reason, the overlapping portion on the Venn diagram of "It's Possible v.s. No One Is Doing It" is where my excitement usually lies. So I decided to put a little time into the possibilities of graphical characters in URLs. Specifically, with the possibility for animating these characters by way of some Javascript.
+# Demo
+![demo.gif](assets/gif/demo.gif) 
 
 ## 1. Animating Moon
-![moon.gif](http://matthewrayfield.com/articles/animating-urls-with-javascript-and-emojis/moon.gif)
+![moon.gif](assets/gif/moon.gif)
 
 
 ```javascript
@@ -22,7 +23,7 @@ var f = ['🌑', '🌒', '🌓', '🌔', '🌝', '🌖', '🌗', '🌘'];
 ## 2. Rolling Clock
 If you don't like the spinning moons you can swap out that array with whatever emojis you want. Like a clock:
 
-![clock.gif](http://matthewrayfield.com/articles/animating-urls-with-javascript-and-emojis/clock.gif)
+![clock.gif](assets/gif/clock.gif)
 
 ```javascript
 var f = ['🕐','🕑','🕒','🕓','🕔','🕕','🕖','🕗','🕘','🕙','🕚','🕛'];
@@ -41,7 +42,7 @@ var f = ['🕐','🕑','🕒','🕓','🕔','🕕','🕖','🕗','🕘','🕙','
 This is a real simple example. Too simple really. So let's upgrade our loop so that it generates a string of multiple emoji! This time we're utilizing the emoji "skin tone modifiers" characters to make some color-changing babies:
 
 
-![babies.gif](http://matthewrayfield.com/articles/animating-urls-with-javascript-and-emojis/babies2.gif)
+![babies.gif](assets/gif/babies.gif)
 
 ```javascript
 var e = ['🏻', '🏼', '🏽', '🏾', '🏿'];
@@ -67,7 +68,7 @@ var e = ['🏻', '🏼', '🏽', '🏾', '🏿'];
 We use a sine wave controlled by time and position to select which color we want. This gives us a nice loopy color changing effect!
 Or how about we revisit our moon spinner, spread it out, and make something resembling a loading indicator? Sure, let's do it:
 
-![sun.gif](http://matthewrayfield.com/articles/animating-urls-with-javascript-and-emojis/moons.gif)
+![moons.gif](assets/gif/moons.gif)
 
 ```javascript
 var f = ['🌑', '🌘', '🌗', '🌖', '🌕', '🌔', '🌓', '🌒'],
@@ -116,7 +117,7 @@ var f = ['🌑', '🌘', '🌗', '🌖', '🌕', '🌔', '🌓', '🌒'],
 
 Many of these lend themselves better to a two dimensional output. But they're still pretty good on the single line we have to play with. For instance we can make a string of multiple height varied block characters and construct a nice little wave:
 
-![wave.gif](http://matthewrayfield.com/articles/animating-urls-with-javascript-and-emojis/wavy.gif)
+![wave.gif](assets/gif/wavy.gif)
 
 ```javascript
 function loop() {
@@ -141,7 +142,7 @@ function loop() {
 Using the variable width characters we can even wiggle on the horizontal, creating something like a progress bar:
 Check it out Live Demo here: http://wavyurl.com/
 
-![progress.gif](http://matthewrayfield.com/articles/animating-urls-with-javascript-and-emojis/progress.gif)
+![progress.gif](assets/gif/progress.gif)
 
 ```javascript
 function loop() {
