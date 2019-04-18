@@ -4,6 +4,7 @@ You can use emoji (and other graphical unicode characters) in URLs. And wow is i
 # Demo
 ![demo.gif](assets/gif/demo.gif) 
 
+
 ## 1. Animating Moon
 ![moon.gif](assets/gif/moon.gif)
 
@@ -137,7 +138,7 @@ function loop() {
     loop();
 ```
 
-## 5. Progress bar
+## 6. Progress bar
 
 Using the variable width characters we can even wiggle on the horizontal, creating something like a progress bar:
 Check it out Live Demo here: http://wavyurl.com/
