@@ -163,4 +163,4 @@ function loop() {
 ```
 
 
-## Credits - by Matthew Rayfield
+## Credits - by ![Matthew Rayfield](http://matthewrayfield.com)
