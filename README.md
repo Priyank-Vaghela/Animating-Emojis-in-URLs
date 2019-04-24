@@ -1,7 +1,7 @@
 # Animating-Emojis-in-URLs
 You can use emoji (and other graphical unicode characters) in URLs. And wow is it great. But no one seems to do it. Why? Perhaps emoji are too exotic for normie web platforms to handle? Or maybe they are avoided for fear of angering the SEO gods?
 
-# [Live Demo - Click me](https://priyankvaghela.github.io/magic.html#%F0%9F%98%98)
+# [Live Demo - Click me](https://priyankvaghela.github.io/magic.html#%F0%9F%98%98) :octocat: 
 ![demo.gif](assets/gif/demo.gif) 
 
 
