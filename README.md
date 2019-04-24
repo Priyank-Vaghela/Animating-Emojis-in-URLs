@@ -1,7 +1,7 @@
 # Animating-Emojis-in-URLs
-You can use emoji (and other graphical unicode characters) in URLs. And wow is it great. But no one seems to do it. Why? Perhaps emoji are too exotic for normie web platforms to handle? Or maybe they are avoided for fear of angering the SEO gods?
+You can use emoji (and other graphical Unicode characters) in URLs. And wow is it great. But no one seems to do it. Why? Perhaps emoji are too exotic for normie web platforms to handle? Or maybe they are avoided for fear of angering the SEO gods?
 
-# Demo
+# Demo - https://priyankvaghela.github.io/magic.html#%F0%9F%98%98
 ![demo.gif](assets/gif/demo.gif) 
 
 
@@ -40,7 +40,7 @@ var f = ['🕐','🕑','🕒','🕓','🕔','🕕','🕖','🕗','🕘','🕙','
 ```
 
 ## 3. Color-changing Babies    
-This is a real simple example. Too simple really. So let's upgrade our loop so that it generates a string of multiple emoji! This time we're utilizing the emoji "skin tone modifiers" characters to make some color-changing babies:
+This is a really simple example. Too simple really. So let's upgrade our loop so that it generates a string of multiple emoji! This time we're utilizing the emoji "skin tone modifiers" characters to make some color-changing babies:
 
 
 ![babies.gif](assets/gif/babies.gif)
@@ -116,52 +116,4 @@ var f = ['🌑', '🌘', '🌗', '🌖', '🌕', '🌔', '🌓', '🌒'],
 
 ## 5. 2D Wave
 
-Many of these lend themselves better to a two dimensional output. But they're still pretty good on the single line we have to play with. For instance we can make a string of multiple height varied block characters and construct a nice little wave:
-
-![wave.gif](assets/gif/wavy.gif)
-
-```javascript
-function loop() {
-        var i, n, s = '';
-
-        for (i = 0; i < 10; i++) {
-            n = Math.floor(Math.sin((Date.now()/200) + (i/2)) * 4) + 4;
-
-            s += String.fromCharCode(0x2581 + n);
-        }
-
-        window.location.hash = s;
-
-        setTimeout(loop, 50);
-    }
-
-    loop();
-```
-
-## 6. Progress bar
-
-Using the variable width characters we can even wiggle on the horizontal, creating something like a progress bar:
-Check it out Live Demo here: http://wavyurl.com/
-
-![progress.gif](assets/gif/progress.gif)
-
-```javascript
-function loop() {
-        var s = '',
-            p;
-
-        p = Math.floor(((Math.sin(Date.now()/300)+1)/2) * 100);
-
-        while (p >= 8) {
-            s += '█';
-            p -= 8;
-        }
-        s += ['⠀','▏','▎','▍','▌','▋','▊','▉'][p];
-
-        location.hash = s;
-        setTimeout(loop, 50);
-    }
-```
-
-
-### Credits - [Matthew Rayfield](http://matthewrayfield.com)
+Many of these lend themselves better to a two-dimensional output. But they're still
